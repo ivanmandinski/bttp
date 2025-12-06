@@ -71,27 +71,27 @@
 
                 <!-- Desktop Navigation -->
                 <div class="hidden lg:flex lg:items-center lg:gap-x-2 animate-fade-in-down">
-                    <a href="{{ route('home') }}" class="relative px-5 py-2.5 text-base font-semibold transition-all duration-300 rounded-lg group {{ request()->routeIs('home') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
+                    <a href="{{ route('home') }}" class="relative px-5 py-2.5 text-base font-semibold uppercase tracking-wide transition-all duration-300 rounded-lg group {{ request()->routeIs('home') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
                         Начало
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent-400 transition-all duration-300 group-hover:w-2/3 {{ request()->routeIs('home') ? 'w-2/3' : '' }}"></span>
                     </a>
-                    <a href="{{ route('about') }}" class="relative px-5 py-2.5 text-base font-semibold transition-all duration-300 rounded-lg group {{ request()->routeIs('about') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
+                    <a href="{{ route('about') }}" class="relative px-5 py-2.5 text-base font-semibold uppercase tracking-wide transition-all duration-300 rounded-lg group {{ request()->routeIs('about') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
                         За нас
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent-400 transition-all duration-300 group-hover:w-2/3 {{ request()->routeIs('about') ? 'w-2/3' : '' }}"></span>
                     </a>
-                    <a href="{{ route('services') }}" class="relative px-5 py-2.5 text-base font-semibold transition-all duration-300 rounded-lg group {{ request()->routeIs('services') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
+                    <a href="{{ route('services') }}" class="relative px-5 py-2.5 text-base font-semibold uppercase tracking-wide transition-all duration-300 rounded-lg group {{ request()->routeIs('services') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
                         Услуги
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent-400 transition-all duration-300 group-hover:w-2/3 {{ request()->routeIs('services') ? 'w-2/3' : '' }}"></span>
                     </a>
-                    <a href="{{ route('news.index') }}" class="relative px-5 py-2.5 text-base font-semibold transition-all duration-300 rounded-lg group {{ request()->routeIs('news.*') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
+                    <a href="{{ route('news.index') }}" class="relative px-5 py-2.5 text-base font-semibold uppercase tracking-wide transition-all duration-300 rounded-lg group {{ request()->routeIs('news.*') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
                         Новини
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent-400 transition-all duration-300 group-hover:w-2/3 {{ request()->routeIs('news.*') ? 'w-2/3' : '' }}"></span>
                     </a>
-                    <a href="{{ route('events.index') }}" class="relative px-5 py-2.5 text-base font-semibold transition-all duration-300 rounded-lg group {{ request()->routeIs('events.*') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
+                    <a href="{{ route('events.index') }}" class="relative px-5 py-2.5 text-base font-semibold uppercase tracking-wide transition-all duration-300 rounded-lg group {{ request()->routeIs('events.*') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
                         Събития
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent-400 transition-all duration-300 group-hover:w-2/3 {{ request()->routeIs('events.*') ? 'w-2/3' : '' }}"></span>
                     </a>
-                    <a href="{{ route('contact') }}" class="relative px-5 py-2.5 text-base font-semibold transition-all duration-300 rounded-lg group {{ request()->routeIs('contact') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
+                    <a href="{{ route('contact') }}" class="relative px-5 py-2.5 text-base font-semibold uppercase tracking-wide transition-all duration-300 rounded-lg group {{ request()->routeIs('contact') ? 'text-accent-500' : '' }}" :class="scrolled ? 'text-gray-700 hover:text-primary-600 hover:bg-primary-50' : 'text-white/90 hover:text-white hover:bg-white/10'">
                         Контакти
                         <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent-400 transition-all duration-300 group-hover:w-2/3 {{ request()->routeIs('contact') ? 'w-2/3' : '' }}"></span>
                     </a>
@@ -133,12 +133,12 @@
                 class="lg:hidden bg-white rounded-2xl shadow-2xl mt-2 p-5 border border-gray-100"
             >
                 <div class="flex flex-col space-y-1">
-                    <a href="{{ route('home') }}" class="px-4 py-3.5 text-lg font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('home') ? 'bg-primary-50 text-primary-600' : '' }}">Начало</a>
-                    <a href="{{ route('about') }}" class="px-4 py-3.5 text-lg font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('about') ? 'bg-primary-50 text-primary-600' : '' }}">За нас</a>
-                    <a href="{{ route('services') }}" class="px-4 py-3.5 text-lg font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('services') ? 'bg-primary-50 text-primary-600' : '' }}">Услуги</a>
-                    <a href="{{ route('news.index') }}" class="px-4 py-3.5 text-lg font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('news.*') ? 'bg-primary-50 text-primary-600' : '' }}">Новини</a>
-                    <a href="{{ route('events.index') }}" class="px-4 py-3.5 text-lg font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('events.*') ? 'bg-primary-50 text-primary-600' : '' }}">Събития</a>
-                    <a href="{{ route('contact') }}" class="px-4 py-3.5 text-lg font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('contact') ? 'bg-primary-50 text-primary-600' : '' }}">Контакти</a>
+                    <a href="{{ route('home') }}" class="px-4 py-3.5 text-lg font-semibold uppercase tracking-wide text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('home') ? 'bg-primary-50 text-primary-600' : '' }}">Начало</a>
+                    <a href="{{ route('about') }}" class="px-4 py-3.5 text-lg font-semibold uppercase tracking-wide text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('about') ? 'bg-primary-50 text-primary-600' : '' }}">За нас</a>
+                    <a href="{{ route('services') }}" class="px-4 py-3.5 text-lg font-semibold uppercase tracking-wide text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('services') ? 'bg-primary-50 text-primary-600' : '' }}">Услуги</a>
+                    <a href="{{ route('news.index') }}" class="px-4 py-3.5 text-lg font-semibold uppercase tracking-wide text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('news.*') ? 'bg-primary-50 text-primary-600' : '' }}">Новини</a>
+                    <a href="{{ route('events.index') }}" class="px-4 py-3.5 text-lg font-semibold uppercase tracking-wide text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('events.*') ? 'bg-primary-50 text-primary-600' : '' }}">Събития</a>
+                    <a href="{{ route('contact') }}" class="px-4 py-3.5 text-lg font-semibold uppercase tracking-wide text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-xl transition-all duration-200 {{ request()->routeIs('contact') ? 'bg-primary-50 text-primary-600' : '' }}">Контакти</a>
                     <div class="pt-3 mt-3 border-t border-gray-100">
                         <a href="{{ route('contact') }}" class="block text-center px-4 py-3.5 bg-gradient-to-r from-accent-400 to-accent-500 text-primary-900 font-bold text-lg rounded-xl shadow-lg">Станете член</a>
                     </div>
