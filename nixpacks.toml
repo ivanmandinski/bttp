@@ -14,7 +14,7 @@ nixPkgs = [
     "php84Extensions.ctype",
     "php84Extensions.bcmath",
     "php84Extensions.gd",
-    "nodejs_20"
+    "nodejs_22"
 ]
 
 [phases.install]
