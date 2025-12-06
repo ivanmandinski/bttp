@@ -20,7 +20,6 @@ Route::get('/news', [PublicController::class, 'newsIndex'])->name('news.index');
 Route::get('/news/{news:slug}', [PublicController::class, 'newsShow'])->name('news.show');
 Route::get('/events', [PublicController::class, 'eventsIndex'])->name('events.index');
 Route::get('/events/{event:slug}', [PublicController::class, 'eventsShow'])->name('events.show');
-Route::get('/members', [PublicController::class, 'membersCatalog'])->name('members.catalog');
 Route::get('/contact', [PublicController::class, 'contact'])->name('contact');
 
 // Auth routes

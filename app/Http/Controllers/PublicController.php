@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
-use App\Models\Member;
 use App\Models\News;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class PublicController extends Controller
@@ -83,32 +81,6 @@ class PublicController extends Controller
             ->get();
 
         return view('public.events.show', compact('event', 'relatedEvents'));
-    }
-
-    public function membersCatalog(Request $request): View
-    {
-        $query = Member::active()
-            ->inCatalog()
-            ->with('category');
-
-        if ($request->filled('search')) {
-            $search = $request->search;
-            $query->where(function ($q) use ($search) {
-                $q->where('company_name', 'ilike', "%{$search}%")
-                    ->orWhere('main_activity', 'ilike', "%{$search}%");
-            });
-        }
-
-        if ($request->filled('category')) {
-            $query->where('membership_category_id', $request->category);
-        }
-
-        $members = $query->orderBy('company_name')
-            ->paginate(12);
-
-        $categories = \App\Models\MembershipCategory::orderBy('name')->get();
-
-        return view('public.members.catalog', compact('members', 'categories'));
     }
 
     public function contact(): View
