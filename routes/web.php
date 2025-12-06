@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
 use App\Livewire\Auth\Login;
 use App\Livewire\Admin\Dashboard;
 use App\Livewire\Admin\Members\MembersList;
@@ -12,9 +13,15 @@ use App\Livewire\Admin\News\NewsList;
 use App\Livewire\Admin\Events\EventsList;
 
 // Public routes
-Route::get('/', function () {
-    return redirect()->route('login');
-})->name('home');
+Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::get('/about', [PublicController::class, 'about'])->name('about');
+Route::get('/services', [PublicController::class, 'services'])->name('services');
+Route::get('/news', [PublicController::class, 'newsIndex'])->name('news.index');
+Route::get('/news/{news:slug}', [PublicController::class, 'newsShow'])->name('news.show');
+Route::get('/events', [PublicController::class, 'eventsIndex'])->name('events.index');
+Route::get('/events/{event:slug}', [PublicController::class, 'eventsShow'])->name('events.show');
+Route::get('/members', [PublicController::class, 'membersCatalog'])->name('members.catalog');
+Route::get('/contact', [PublicController::class, 'contact'])->name('contact');
 
 // Auth routes
 Route::get('/login', Login::class)->name('login')->middleware('guest');
