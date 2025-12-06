@@ -31,5 +31,8 @@ class DatabaseSeeder extends Seeder
         foreach ($categories as $category) {
             MembershipCategory::create($category);
         }
+
+        // Seed news and events
+        $this->call(NewsAndEventsSeeder::class);
     }
 }

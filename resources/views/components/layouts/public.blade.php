@@ -58,13 +58,9 @@
             <div class="flex h-20 lg:h-24 justify-between items-center">
                 <!-- Logo -->
                 <div class="flex-shrink-0 animate-fade-in-left">
-                    <a href="{{ route('home') }}" class="flex items-center gap-3 group">
+                    <a href="{{ route('home') }}" class="flex items-center group">
                         <div class="bg-gradient-to-br from-primary-600 to-primary-800 text-white font-bold text-xl lg:text-2xl px-3 lg:px-4 py-2 lg:py-2.5 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                             БТПП
-                        </div>
-                        <div class="hidden sm:block">
-                            <div class="font-heading font-bold text-lg lg:text-xl transition-colors duration-300" :class="scrolled ? 'text-primary-900' : 'text-white'">Плевен</div>
-                            <div class="text-xs lg:text-sm transition-colors duration-300" :class="scrolled ? 'text-gray-500' : 'text-white/70'">Търговско-Промишлена Палата</div>
                         </div>
                     </a>
                 </div>
