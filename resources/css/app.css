@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../../app/Livewire/**/*.php';
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@theme {
+    /* Primary - Dark Blue (Trust, Professionalism) */
+    --color-primary-50: #f0f5fa;
+    --color-primary-100: #dae6f2;
+    --color-primary-200: #b8cfe6;
+    --color-primary-300: #8ab1d5;
+    --color-primary-400: #5a8fc0;
+    --color-primary-500: #3d73a8;
+    --color-primary-600: #1E3A5F;
+    --color-primary-700: #1a3252;
+    --color-primary-800: #162a45;
+    --color-primary-900: #12223a;
+
+    /* Accent - Gold (Prestige, Value) */
+    --color-accent-50: #fdf9ed;
+    --color-accent-100: #f9efd0;
+    --color-accent-200: #f2dc9e;
+    --color-accent-300: #eac463;
+    --color-accent-400: #D4A537;
+    --color-accent-500: #c18f24;
+    --color-accent-600: #a5711c;
+    --color-accent-700: #84541a;
+    --color-accent-800: #6d441c;
+    --color-accent-900: #5c391c;
+
+    /* Success - Green (Growth, Prosperity) */
+    --color-success-50: #f0fdf4;
+    --color-success-100: #dcfce7;
+    --color-success-200: #bbf7d0;
+    --color-success-500: #22c55e;
+    --color-success-600: #2C5F2D;
+    --color-success-700: #15803d;
+
+    /* Fonts */
+    --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom utility classes */
+@layer components {
+    .btn-primary {
+        @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    }
+
+    .btn-accent {
+        @apply bg-accent-400 hover:bg-accent-500 text-primary-900 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    }
+
+    .btn-outline {
+        @apply border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    }
+
+    .card {
+        @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+    }
+
+    .input-field {
+        @apply w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500;
+    }
+
+    .heading-1 {
+        @apply font-heading text-3xl font-bold text-primary-900;
+    }
+
+    .heading-2 {
+        @apply font-heading text-2xl font-semibold text-primary-800;
+    }
+
+    .heading-3 {
+        @apply font-heading text-xl font-semibold text-primary-700;
+    }
+}
