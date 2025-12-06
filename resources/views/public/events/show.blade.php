@@ -50,7 +50,7 @@
                         @endif
 
                         <div class="prose prose-lg lg:prose-xl max-w-none prose-headings:font-heading prose-headings:text-primary-900 prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline">
-                            {!! nl2br(e($event->description)) !!}
+                            {!! $event->description !!}
                         </div>
 
                         <!-- Back Link -->

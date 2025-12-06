@@ -106,7 +106,7 @@
                                     </div>
 
                                     @if($event->description)
-                                        <p class="mt-4 text-gray-600 text-sm line-clamp-2 leading-relaxed">{{ Str::limit($event->description, 150) }}</p>
+                                        <p class="mt-4 text-gray-600 text-sm line-clamp-2 leading-relaxed">{{ Str::limit(strip_tags($event->description), 150) }}</p>
                                     @endif
 
                                     <a href="{{ route('events.show', $event) }}" class="mt-5 inline-flex items-center gap-2 text-primary-600 font-semibold text-sm hover:text-primary-700 group/link">

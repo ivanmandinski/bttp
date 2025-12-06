@@ -75,7 +75,7 @@
                 @endif
 
                 <div class="prose prose-lg lg:prose-xl max-w-none prose-headings:font-heading prose-headings:text-primary-900 prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline animate-fade-in-up" style="animation-delay: 0.2s;">
-                    {!! nl2br(e($news->content)) !!}
+                    {!! $news->content !!}
                 </div>
 
                 <!-- Actions -->
